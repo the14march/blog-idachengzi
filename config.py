@@ -12,7 +12,7 @@ class Config:
     MAIL_PORT = 465
     MAIL_USE_SSL = True
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME') or '2976626104@qq.com'
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD') or '2407room-'
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD') or 'ciquycpdtlyzdgfi'
 
     IDACHENGZI_MAIL_SUBJECT_PREFIX = '[Idachengzi]'
     IDACHENGZI_MAIL_SENDER = 'Idachengzi Admin <2976626104@qq.com>'
