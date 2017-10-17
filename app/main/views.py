@@ -27,13 +27,3 @@ def index():
         return redirect(url_for('main.index'))
     return render_template('index.html', form=form, name=session.get('name'), known=session.get('known', False),
                            current_time=datetime.utcnow())
-
-# @main.route('/', methods=['GET', 'POST'])
-# def index():
-#     name = None
-#     form = NameForm()
-#     if form.validate_on_submit():
-#         name = form.name.data
-#         form.name.data = ''
-#         return redirect(url_for('main.index'))
-#     return render_template('index.html', form=form, name=name, known=False, current_time=datetime.utcnow())
