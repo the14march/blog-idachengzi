@@ -1,0 +1,40 @@
+.sidebar-bg {
+    background-color: #f0f0f0;
+    margin-top: 10px;
+}
+#sidebar {
+    font-size: 100%;
+    margin-bottom: 16px;
+}
+#sidebar h1 {
+    border-bottom: 1px solid #ccc;
+    font-weight: normal;
+    font-size: 150%;
+}
+#sidebar ul {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+#sidebar .label a {
+    color: #eee;
+}
+.footer {
+    padding: 2em 0 2em 0;
+    background-color: #ececec;
+    color: #000000 !important
+}
+.footer a {
+    color: #66ccff
+}
+
+.footer span {
+    color: #000000
+}
+
+div.pagination {
+    width: 100%;
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+}

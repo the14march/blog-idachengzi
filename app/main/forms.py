@@ -3,12 +3,19 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField, BooleanField, SelectField
 from wtforms.validators import DataRequired, Length, Email, Regexp, ValidationError
 
-from app.models import Role, User
+from app.models import Role, User, Category
 
 
-class NameForm(FlaskForm):
-    name = StringField('What is your name?', validators=[DataRequired()])
+class PostForm(FlaskForm):
+    category = SelectField('Category', coerce=int)
+    body = TextAreaField('Edit your post.', validators=[DataRequired()])
     submit = SubmitField('Submit')
+
+    def __init__(self, *args, **kwargs):
+        super(PostForm, self).__init__(*args, **kwargs)
+        self.category.choices = [(category.id, category.name) for category in
+                                 Category.query.order_by(Category.id).all()]
+
 
 
 class EditProfileForm(FlaskForm):
@@ -21,7 +28,7 @@ class EditProfileForm(FlaskForm):
 class EditProfileAdminForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), Length(1, 64), Email()])
     username = StringField('Username', validators=[DataRequired(), Length(1, 64), Regexp('^[A-Za-z][A-za-z0-9_.]*$', 0,
-                                                   'Username must have only letters, numbers, dots or underscores.')])
+                                                                                         'Username must have only letters, numbers, dots or underscores.')])
     confirmed = BooleanField('Confirmed')
     role = SelectField('Role', coerce=int)
     name = StringField('Real name', validators=[Length(0, 64)])
@@ -32,7 +39,6 @@ class EditProfileAdminForm(FlaskForm):
     def __init__(self, user, *args, **kwargs):
         super(EditProfileAdminForm, self).__init__(*args, **kwargs)
         self.role.choices = [(role.id, role.name) for role in Role.query.order_by(Role.id).all()]
-        self.role.default = (user.role.id, user.role.name)
         self.user = user
 
     def validate_email(self, field):

@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+{% block title %}
+Idachengzi - Posts
+{% endblock %}
+{% block page_content %}
+<div id="main">
+
+    <div class="post">
+        <p class="date"><span class="flask-moment" data-timestamp="2017-10-10T15:22:43Z" data-format="format('LL')"
+                              data-refresh="0">2017-10-10T15:22:43Z</span></p>
+        <h1 class="post-title"><a href="/post/implementing-user-comments-with-sqlalchemy">Implementing User Comments
+            with SQLAlchemy</a></h1>
+        <div class="posted">Posted by <span class="label label-danger"><a
+                href="/author/Miguel Grinberg">Miguel Grinberg</a></span>
+            under <span class="label label-primary"><a href="/category/Python">Python</a></span>, <span
+                    class="label label-primary"><a href="/category/Database">Database</a></span>, <span
+                    class="label label-primary"><a href="/category/Programming">Programming</a></span>.
+        </div>
+
+        <div class="post_body"><p>One of the most basic ways to keep the users of your web application engaged is to
+            give them a space to write comments. These days, there are third-party services pretty much for
+            everything, and comments is not an exception. <a href="https://disqus.com/">Disqus</a> and <a
+                    href="https://facebook.com/">Facebook</a> are popular services that allow you to embed comments
+            into your site.</p>
+            <p>But what if you don't want to use an external service? In this article, I'm going to show you how I
+                implement comments in Python, using the SQLAlchemy ORM and any of the database engines it supports.
+                I'm going to start with an extremely simple approach, and then will go on to discuss a few advanced
+                implementations with support for multiple levels of replies.</p></div>
+
+        <h4 style="float: right"><a href="/post/implementing-user-comments-with-sqlalchemy#comments">5 comments</a>
+        </h4>
+
+        <div style="clear: both;"><a href="/post/implementing-user-comments-with-sqlalchemy">Read more...</a></div>
+    </div>
+
+    <div class="post">
+        <p class="date"><span class="flask-moment" data-timestamp="2017-09-12T18:24:44Z" data-format="format('LL')"
+                              data-refresh="0">2017-09-12T18:24:44Z</span></p>
+        <h1 class="post-title"><a href="/post/using-a-chromebook-for-web-development">Using a Chromebook for Web
+            Development</a></h1>
+        <div class="posted">Posted by <span class="label label-danger"><a
+                href="/author/Miguel Grinberg">Miguel Grinberg</a></span>
+            under <span class="label label-primary"><a href="/category/Product Reviews">Product Reviews</a></span>,
+            <span class="label label-primary"><a href="/category/Programming">Programming</a></span>.
+        </div>
+
+        <div class="post_body">
+            <p>Have you seen anybody using a <a href="https://www.google.com/chromebook/">Chromebook</a> yet? These
+                are slim, lightweight laptops that run <a
+                        href="https://en.wikipedia.org/wiki/Chrome_OS">ChromeOS</a>, an operating system made by
+                Google that is designed around the Chrome web browser. If you want a laptop that you can use for
+                doing your email, watching Netflix and other tasks you can easily do in a web browser, then a
+                Chromebook is a very good choice, and also cheap, since most models are in the $150-$300 price
+                range.</p>
+            <p>They also make great travel laptops if you are going on vacation or to a conference. The problem for
+                me is that when I travel, I spend a fair amount of time coding (this is an addiction I do not want
+                to get rid of!). So I decided to buy one and try to configure it in a way that is suitable for web
+                development on the move. In this article I'm going to go over three different approaches to do
+                that.</p></div>
+
+        <h4 style="float: right"><a href="/post/using-a-chromebook-for-web-development#comments">21 comments</a>
+        </h4>
+
+        <div style="clear: both;"><a href="/post/using-a-chromebook-for-web-development">Read more...</a></div>
+    </div>
+
+    <div class="post">
+        <p class="date"><span class="flask-moment" data-timestamp="2017-08-23T17:32:00Z" data-format="format('LL')"
+                              data-refresh="0">2017-08-23T17:32:00Z</span></p>
+        <h1 class="post-title"><a href="/post/serverless-deployments-of-python-apis">Serverless Deployments of
+            Python APIs</a></h1>
+        <div class="posted">Posted by <span class="label label-danger"><a
+                href="/author/Miguel Grinberg">Miguel Grinberg</a></span>
+            under <span class="label label-primary"><a href="/category/Microservices">Microservices</a></span>,
+            <span class="label label-primary"><a href="/category/AWS">AWS</a></span>, <span
+                    class="label label-primary"><a href="/category/Flask">Flask</a></span>, <span
+                    class="label label-primary"><a href="/category/Programming">Programming</a></span>, <span
+                    class="label label-primary"><a href="/category/Python">Python</a></span>, <span
+                    class="label label-primary"><a href="/category/Cloud">Cloud</a></span>.
+        </div>
+
+        <div class="post_body"><p>If you are like me, you were starting to get comfortable with the idea of
+            deploying your applications to cloud instances such as EC2s on AWS or droplets on DigitalOcean, when
+            people started to shift away from cloud instances and embrace containers. Maybe now you are getting into
+            containers and Docker, and as is to be expected, the tech world is making a move once again, this time
+            to <a href="https://en.wikipedia.org/wiki/Serverless_computing">severless computing</a>. Impossible to
+            ever catch up, right?</p>
+            <p>In this article I'm going to tell you what a serverless architecture can offer you that the more
+                traditional approaches cannot (and more specifically how it is possible to run your Python web
+                applications without a server!). At the time I'm writing this, <a
+                        href="https://aws.amazon.com/">AWS</a> has by far the most mature serverless platform, with
+                the Lambda, API Gateway and DynamoDB triad of services at the forefront, so this is the platform I'm
+                going to concentrate on.</p>
+        </div>
+
+        <h4 style="float: right"><a href="/post/serverless-deployments-of-python-apis#comments">2 comments</a></h4>
+
+        <div style="clear: both;"><a href="/post/serverless-deployments-of-python-apis">Read more...</a></div>
+    </div>
+
+    <div class="post">
+        <p class="date"><span class="flask-moment" data-timestamp="2017-06-21T22:15:18Z" data-format="format('LL')"
+                              data-refresh="0">2017-06-21T22:15:18Z</span></p>
+        <h1 class="post-title"><a href="/post/handling-authentication-secrets-in-the-browser">Handling
+            Authentication Secrets in the Browser</a></h1>
+        <div class="posted">Posted by <span class="label label-danger"><a
+                href="/author/Miguel Grinberg">Miguel Grinberg</a></span>
+            under <span class="label label-primary"><a href="/category/Authentication">Authentication</a></span>,
+            <span class="label label-primary"><a href="/category/Javascript">Javascript</a></span>, <span
+                    class="label label-primary"><a href="/category/Programming">Programming</a></span>, <span
+                    class="label label-primary"><a href="/category/Security">Security</a></span>.
+        </div>
+
+        <div class="post_body"><p>
+            </p>
+            <p>I gave a talk titled <a
+                    href="https://conferences.oreilly.com/fluent/fl-ca/public/schedule/detail/57998">Handling
+                Authentication Secrets in the Browser</a> at <a href="https://conferences.oreilly.com/fluent/fl-ca">Fluent
+                2017</a> in San Jose (you can see the slides above). As a complement to the talk, I thought it would
+                be a good idea to write down the main concepts here on the blog as well, for those that weren't at
+                my talk or those that were, but want to study the topic with more time than the 40 minutes I had for
+                my presentation.</p></div>
+
+
+        <div style="clear: both;"><a href="/post/handling-authentication-secrets-in-the-browser">Read more...</a>
+        </div>
+    </div>
+
+    <div class="page">
+        <ul class="pager">
+            <li class="previous disabled">
+                <a href="#">&larr; Newer Posts</a>
+            </li>
+            <li class="next">
+                <a href="/index/page/2">Older Posts &rarr;</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+{% endblock %}
+{% block page_sidebar %}
+<div id="sidebar">
+
+    <h1>Check Out My Kickstarter Project!</h1>
+
+    <p>My <a
+            href="https://www.kickstarter.com/projects/1124925856/the-new-and-improved-flask-mega-tutorial">Kickstarter</a>
+        project is now live!</p>
+    <p>Would you like to support my effort to do a major update to the Flask Mega-Tutorial?</p>
+            src="https://blog.miguelgrinberg.com/static/kickstarter_badge.png"></a></p></center>
+    <p>I'm hoping to get funding to work on a much deserved update to this tutorial!</p>
+    <p>If you have learned from the tutorial and would like to see it updated to 2017 technology including Python 3.6,
+        please head over to the <a
+                href="https://www.kickstarter.com/projects/1124925856/the-new-and-improved-flask-mega-tutorial">Kickstarter
+            page</a> for more information on the campaign.</p>
+            src="https://blog.miguelgrinberg.com/static/kickstarter.jpg" style="border: 2px solid black;"></a></p>
+    </center>
+
+
+    <h1>About Miguel</h1>
+    <p>Welcome to my blog!</p>
+    <p>I'm a software engineer, photographer and filmmaker in Portland, Oregon, USA.</p>
+    <p>You can also find me on <a href="https://www.facebook.com/miguelgrinbergblog">Facebook</a>, <a
+            href="https://plus.google.com/u/0/117786742456929977820">Google+</a>, <a
+            href="http://www.linkedin.com/in/miguelgrinberg">LinkedIn</a>, <a href="https://github.com/miguelgrinberg">Github</a>
+        and <a href="https://twitter.com/#!/miguelgrinberg">Twitter</a>.</p>
+    <p>Thank you for visiting!</p>
+
+
+    <h1>Categories</h1>
+    <ul>
+        <button class="btn btn-primary" type="button">
+            Messages <span class="badge">4</span>
+        </button>
+        <button class="btn btn-primary" type="button">
+            Messages <span class="badge">4</span>
+        </button>
+        <button class="btn btn-primary" type="button">
+            Messages <span class="badge">4</span>
+        </button>
+        <button class="btn btn-primary" type="button">
+            Messages <span class="badge">4</span>
+        </button>
+
+    </ul>
+
+</div>
+
+{% endblock %}

@@ -5,15 +5,46 @@ from flask_login import login_required, current_user
 
 from app.decorators import admin_required
 from app.main import main
-from app.main.forms import EditProfileForm, EditProfileAdminForm
+from app.main.forms import EditProfileForm, EditProfileAdminForm, PostForm
 from app import db
-from app.models import User, Role
+from app.models import User, Role, Permission, Post, Category
 from app.email import send_email
 
 
 @main.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
+    form = PostForm()
+    posts = Post.query.order_by(Post.timestamp.desc()).all()
+    if current_user.can(Permission.WRITE_ARTICLES) and form.validate_on_submit():
+        post = Post(body=form.body.data,
+                    author=current_user._get_current_object(),
+                    category=Category.query.get(form.category.data))
+        db.session.add(post)
+        return redirect(url_for('main.index', form=form, posts=posts))
+    return render_template('index.html', form=form, posts=posts)
+
+
+@main.route('/edit-post', methods=['GET', 'POST'])
+def edit_post():
+    form = PostForm()
+    if current_user.can(Permission.WRITE_ARTICLES) and form.validate_on_submit():
+        post = Post(body=form.body.data,
+                    author=current_user._get_current_object(),
+                    category=Category.query.get(form.category.data))
+        db.session.add(post)
+        return render_template('index.html', post=[post])
+    posts = Post.query.order_by(Post.timestamp.desc()).all()
+    return render_template('index.html', form=form, posts=posts)
+
+
+@main.route('/test-posts')
+def test_posts():
+    return render_template('tem_posts.html')
+
+
+@main.route('/about-me')
+def about_me():
+    return render_template('about_me.html')
 
 
 @main.route('/user/<username>')

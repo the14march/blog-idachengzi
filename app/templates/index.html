@@ -4,15 +4,91 @@
 {% block title %}idachengzi{% endblock %}
 
 {% block page_content %}
-<div class="page-header">
-    <h1>
-        Hello,
-        {% if current_user.is_authenticated %}
-            {{ current_user.username }}
-        {% else %}
-            Stranger
+    <div class="page-header">
+        <h1>
+            Hello,
+            {% if current_user.is_authenticated %}
+                {{ current_user.username }}
+            {% else %}
+                Stranger
+            {% endif %}
+            !</h1>
+    </div>
+    <div>
+        {% if current_user.can(Permission.WRITE_ARTICLES) %}
+        {{ wtf.quick_form(form) }}
         {% endif %}
-        !</h1>
-</div>
-{#{{ wtf.quick_form(form) }}#}
+    </div>
+    <ul class="posts">
+        {% for post in posts %}
+            <li class="post">
+                <div class="date">
+                {{ moment(post.timestamp).format('YYYY-M-D HH:mm') }}
+            </div>
+
+                <div class="posted">Posted by
+                    <span class="label label-danger">
+                    <a href="{{ url_for('main.user', username=post.author.username) }}">{{ post.author.username }}</a>
+                </span>
+                    under
+                    <span class="label label-primary">
+                    <a href="/category/Python">{{ post.category.name }}</a>
+                </span>.
+                </div>
+                <div class="post-body">
+                {{ post.body }}
+            </div>
+            </li>
+        {% endfor %}
+    </ul>
+    {#{{ wtf.quick_form(form) }}#}
+    <div>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+        <p>a</br></p>
+    </div>
 {% endblock %}
