@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}idachengzi{% endblock %}
+
+{% block page_content %}
+    <div class="col-md-6" style="background-color: #f7ecb5">
+    a<br>
+    a<br>
+    a<br>
+    a<br>
+    a<br>
+    a<br>
+    a<br>
+    a<br>
+    </div>
+{% endblock %}
+{% block page_sidebar %}
+    <div class="col-md-6" style="background-color: aquamarine">
+        <div>
+            {% if current_user.can(Permission.WRITE_ARTICLES) %}
+                {{ wtf.quick_form(form) }}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

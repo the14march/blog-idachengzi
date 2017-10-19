@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}idachengzi{% endblock %}
+
+{% block page_content %}
+    <div class="col-md-8">
+        <div id="main">
+            <div class="post">
+                <p class="date">{{ moment(post.timestamp).format('YYYY-M-D HH:mm') }}</p>
+                <h1 class="post-title"><a href="{{ url_for('main.post_detail', id=post.id) }}">{{ post.title }}</a>
+                </h1>
+                <div class="posted">Posted by
+                    <span class="label label-danger">
+                    <a href="{{ url_for('main.user', username=post.author.username) }}">{{ post.author.username }}</a>
+                </span>
+                    under
+                    <span class="label label-primary">
+                    <a href="{{ url_for('main.posts_under_category', category_id=post.category.id) }}">{{ post.category.name }}</a>
+                </span>.
+                </div>
+                <div class="post_body"><p>{{ post.body }}</p></div>
+                <a href="{{ url_for('main.edit_post', id=post.id) }}">
+                    <button class="btn btn-danger">Edit</button>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block page_sidebar %}
+    <div class="col-md-4 sidebar-bg">
+        {% include "_sidebar.html" %}
+    </div>
+{% endblock %}

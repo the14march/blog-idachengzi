@@ -4,10 +4,8 @@
 {% block title %}Idachengzi - Change Email Address{% endblock %}
 
 {% block page_content %}
-    <div class="page-header">
+    <div class="page_header col-md-6r">
         <h1>Change Your Email Address</h1>
+        {{ wtf.quick_form(form) }}
     </div>
-    <div class="col-md-4">
-    {{ wtf.quick_form(form) }}
-</div>
 {% endblock %}

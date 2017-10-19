@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from datetime import datetime
-from flask import render_template, abort, session, redirect, url_for, current_app, flash
+from flask import render_template, abort, redirect, url_for, current_app, flash, request
 from flask_login import login_required, current_user
 
 from app.decorators import admin_required
@@ -8,43 +7,90 @@ from app.main import main
 from app.main.forms import EditProfileForm, EditProfileAdminForm, PostForm
 from app import db
 from app.models import User, Role, Permission, Post, Category
-from app.email import send_email
 
 
-@main.route('/', methods=['GET', 'POST'])
+@main.route('/')
 def index():
+    categories = Category.query.all()
+    page = request.args.get('page', 1, type=int)
+    pagination = Post.query.order_by(Post.timestamp.desc()).paginate(
+        page, per_page=current_app.config['IDACHENGZI_POSTS_PER_PAGE'], error_out=False)
+    posts = pagination.items
+    return render_template('index.html', posts=posts, pagination=pagination, categories=categories)
+
+
+@main.route('/post/<int:id>', methods=['GET', 'POST'])
+def post_detail(id):
+    categories = Category.query.all()
+    post = Post.query.get_or_404(id)
+    return render_template('post.html', post=post, categories=categories)
+
+
+@main.route('/category/<string:category_id>')
+def posts_under_category(category_id):
+    categories = Category.query.all()
+    page = request.args.get('page', 1, type=int)
+    pagination = Post.query.filter_by(category_id=category_id).order_by(Post.timestamp.desc()).paginate(
+        page, per_page=current_app.config['IDACHENGZI_POSTS_PER_PAGE'], error_out=False)
+    posts = pagination.items
+    return render_template('posts_under_category.html', posts=posts, pagination=pagination, categories=categories)
+
+
+@main.route('/edit-post/<int:id>', methods=['GET', 'POST'])
+@login_required
+def edit_post(id):
+    categories = Category.query.all()
+    post = Post.query.get_or_404(id)
+    if current_user != post.author:
+        abort(403)
     form = PostForm()
-    posts = Post.query.order_by(Post.timestamp.desc()).all()
+    if form.validate_on_submit():
+        post.body = form.body.data
+        post.summary = form.summary.data
+        post.title = form.title.data
+        post.category = Category.query.get(form.category.data)
+        db.session.add(post)
+        flash('This post has been updated.')
+        return redirect(url_for('main.post_detail', id=post.id))
+    form.title.data = post.title
+    form.category.data = post.category
+    form.body.data = post.body
+    form.summary.data = post.summary
+    return render_template('edit_post.html', form=form, categories=categories)
+
+
+@main.route('/delete-post/<int:id>')
+@login_required
+def delete_post(id):
+    pass
+
+
+@main.route('/edit-new-post', methods=['GET', 'POST'])
+@login_required
+def edit_new_post():
+    form = PostForm()
     if current_user.can(Permission.WRITE_ARTICLES) and form.validate_on_submit():
-        post = Post(body=form.body.data,
+        post = Post(title=form.title.data,
+                    summary=form.summary.data,
+                    body=form.body.data,
                     author=current_user._get_current_object(),
                     category=Category.query.get(form.category.data))
         db.session.add(post)
-        return redirect(url_for('main.index', form=form, posts=posts))
-    return render_template('index.html', form=form, posts=posts)
+        return redirect(url_for('main.post_detail', id=Post.query.filter_by(title=post.title).first().id))
+    return render_template('edit_new_post.html', form=form)
 
 
-@main.route('/edit-post', methods=['GET', 'POST'])
-def edit_post():
-    form = PostForm()
-    if current_user.can(Permission.WRITE_ARTICLES) and form.validate_on_submit():
-        post = Post(body=form.body.data,
-                    author=current_user._get_current_object(),
-                    category=Category.query.get(form.category.data))
-        db.session.add(post)
-        return render_template('index.html', post=[post])
-    posts = Post.query.order_by(Post.timestamp.desc()).all()
-    return render_template('index.html', form=form, posts=posts)
-
-
-@main.route('/test-posts')
-def test_posts():
-    return render_template('tem_posts.html')
+@main.route('/search', methods=['GET', 'POST'])
+def search():
+    return render_template('search.html')
 
 
 @main.route('/about-me')
 def about_me():
     return render_template('about_me.html')
+
+
+# /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 @main.route('/user/<username>')

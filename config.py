@@ -19,6 +19,8 @@ class Config:
 
     IDACHENGZI_ADMIN = os.environ.get('IDACHENGZI_ADMIN') or '2976626104@qq.com'
 
+    IDACHENGZI_POSTS_PER_PAGE=10
+
     @staticmethod
     def init_app(app):
         pass

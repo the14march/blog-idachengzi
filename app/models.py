@@ -2,8 +2,10 @@
 import hashlib
 from datetime import datetime
 
+import bleach
 from flask import current_app, request
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+from markdown import markdown
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin, login_required, AnonymousUserMixin
 
@@ -177,10 +179,14 @@ class User(UserMixin, db.Model):
 class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(64))
+    summary =db.Column(db.Text)
     body = db.Column(db.Text)
+    body_html = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    comments = db.relationship('Comment', backref='post', lazy='dynamic')
 
 
 class Category(db.Model):
@@ -188,6 +194,26 @@ class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True)
     posts = db.relationship('Post', backref='category', lazy='dynamic')
+
+
+class Comment(db.Model):
+    __tablename__ = 'comments'
+    id = db.Column(db.Integer, primary_key=True)
+    emain = db.Column(db.String(64))
+    body = db.Column(db.Text)
+    body.html = db.Column(db.Text)
+    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    disabled = db.Column(db.Boolean)
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
+
+    @staticmethod
+    def on_change_body(target, value, oldvalue, initiator):
+        allowed_tags = ['a', 'abbr', 'acronym', 'b', 'code', 'em', 'i', 'strong']
+        target.body.html = bleach.linkify(bleach.clean(
+            markdown(value, output_format='html'),
+            tags=allowed_tags, strip=True))
+
+db.event.listen(Comment.body, 'set', Comment.on_change_body)
 
 
 class AnonymousUser(AnonymousUserMixin):

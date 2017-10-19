@@ -41,19 +41,21 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/">Home</a></li>
                     <li><a href="{{ url_for('main.about_me') }}">About me</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ url_for('main.test_posts') }}">Test posts</a></li>
-                            <li><a href="{{ url_for('auth.logout') }}">Log out</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="{{ url_for('main.search') }}">Search</a></li>
+                    {% if current_user.is_authenticated %}
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                {{ current_user.username }} <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ url_for('auth.change_password') }}">Change Password</a></li>
+                                <li><a href="{{ url_for('auth.change_email_request') }}">Change Email</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="{{ url_for('main.edit_new_post') }}">Edit New Post</a></li>
+                                <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
+                            </ul>
+                        </li>
+                    {% endif %}
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -68,13 +70,9 @@
                 {{ message }}
             </div>
         {% endfor %}
-        <div class="main">
-            <div class="col-md-8">
-                {% block page_content %}{% endblock %}
-            </div>
-            <div class="col-md-4 sidebar-bg">
-                {% block page_sidebar %}{% endblock %}
-            </div>
+        <div class="row">
+            {% block page_content %}{% endblock %}
+            {% block page_sidebar %}{% endblock %}
         </div>
 
     </div>
@@ -87,7 +85,6 @@
             © 2017 by
             <a href="{{ url_for('main.about_me') }}">聂凯_TheMarch</a>
             Powered by <a href="http://www.vultr.com/" target="_blank">Vultr</a>
-            <a href="{{ url_for('auth.login') }}">Log in</a>
         </div>
     </footer>
 {% endblock %}

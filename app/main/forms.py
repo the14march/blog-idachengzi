@@ -7,8 +7,10 @@ from app.models import Role, User, Category
 
 
 class PostForm(FlaskForm):
+    title = StringField('Title', validators=[DataRequired(), Length(1, 64)])
     category = SelectField('Category', coerce=int)
     body = TextAreaField('Edit your post.', validators=[DataRequired()])
+    summary = TextAreaField('Summary', validators=[DataRequired()])
     submit = SubmitField('Submit')
 
     def __init__(self, *args, **kwargs):

@@ -3,12 +3,9 @@
 {% block title %}Idachengzi - Login{% endblock %}
 
 {% block page_content %}
-    <div class="page_header">
+    <div class="page_header col-md-6">
         <h1>Login</h1>
-    </div>
-    <div class="col-md-8">
         {{ wtf.quick_form(form) }}
-        <p>New user?<a href="{{ url_for('auth.register') }}">Click here to register.</a></p>
-        <p>Forgot your password?<a href="{{ url_for('auth.password_reset_request') }}">Click here to reset</a></p>
+        <br>
     </div>
 {% endblock %}
