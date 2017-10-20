@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from flask_pagedown.fields import PageDownField
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField, BooleanField, SelectField
 from wtforms.validators import DataRequired, Length, Email, Regexp, ValidationError
@@ -16,7 +17,7 @@ class PostForm(FlaskForm):
     def __init__(self, *args, **kwargs):
         super(PostForm, self).__init__(*args, **kwargs)
         self.category.choices = [(category.id, category.name) for category in
-                                 Category.query.order_by(Category.id).all()]
+                                 Category.query.order_by('id').all()]
 
 
 

@@ -22,7 +22,8 @@
 .footer {
     padding: 2em 0 2em 0;
     background-color: #ececec;
-    color: #000000 !important
+    color: #000000 !important;
+    margin-top: 50px;
 }
 .footer a {
     color: #66ccff

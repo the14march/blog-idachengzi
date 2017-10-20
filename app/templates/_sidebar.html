@@ -3,10 +3,9 @@
     <ul class="list-group">
         {% for category in categories %}
             <a href="{{ url_for('main.posts_under_category', category_id=category.id) }}">
-                <li class="list-group-item">
+                <li class="list-group-item category-span">
                     <span class="badge">{{ category.posts.count() }}</span>
                     {{ category.name }}
-
                 </li>
             </a>
         {% endfor %}

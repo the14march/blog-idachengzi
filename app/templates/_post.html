@@ -1,28 +1,18 @@
 <div id="main">
     {% for post in posts %}
         <div class="post">
-            <p class="date">{{ moment(post.timestamp).format('YYYY-M-D HH:mm') }}</p>
-            <h1 class="post-title"><a href="{{ url_for('main.post_detail', id=post.id) }}">{{ post.title }}</a></h1>
-            <div class="posted">Posted by
-                <span class="label label-danger">
-                    <a href="{{ url_for('main.user', username=post.author.username) }}">{{ post.author.username }}</a>
+            <h1 class="post-title" style="margin-top: 10px"><a href="{{ url_for('main.post_detail', id=post.id) }}">{{ post.title }}</a></h1>
+            <div class="posted" style="margin-top: 5px">作者：
+                <span>
+                    <a href="{{ url_for('main.about_me', username=post.author.username) }}">{{ post.author.username }}</a>
                 </span>
-                under
-                <span class="label label-primary">
+                 •
+                <span>
                     <a href="{{ url_for('main.posts_under_category', category_id=post.category.id) }}">{{ post.category.name }}</a>
-                </span>.
+                </span>
+                 • {{ moment(post.timestamp).format('YYYY年M月D日 HH:mm') }}
             </div>
-            <div class="post_body"><p>{{ post.summary }}</p></div>
+            <div class="post_body"><p>{{ post.summary|markdown2html|safe }}</p></div>
         </div>
     {% endfor %}
-    <div class="page">
-        <ul class="pager">
-            <li class="previous disabled">
-                <a href="#">&larr; Newer Posts</a>
-            </li>
-            <li class="next">
-                <a href="/index/page/2">Older Posts &rarr;</a>
-            </li>
-        </ul>
-    </div>
 </div>

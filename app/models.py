@@ -75,7 +75,6 @@ class User(UserMixin, db.Model):
     last_seen = db.Column(db.DateTime(), default=datetime.utcnow)
     avatar_hash = db.Column(db.String(32))
     posts = db.relationship('Post', backref='author', lazy='dynamic')
-    strip = db.Column(db.Integer)
     role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))
 
     def __init__(self, **kwargs):
@@ -180,13 +179,32 @@ class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(64))
-    summary =db.Column(db.Text)
+    summary = db.Column(db.Text)
     body = db.Column(db.Text)
     body_html = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     comments = db.relationship('Comment', backref='post', lazy='dynamic')
+
+    @staticmethod
+    def on_changed_post(target, value, oldvalue, initiaor):
+        allow_tags = ['a', 'abbr', 'acronym', 'b', 'blockquote', 'code',
+                      'em', 'i', 'li', 'ol', 'pre', 'strong', 'ul',
+                      'h1', 'h2', 'h3', 'p', 'img']
+        # 转换markdown为html，并清洗html标签
+        target.body_html = bleach.linkify(bleach.clean(
+            markdown(value, output_form='html'),
+            tags=allow_tags, strip=True,
+            attributes={
+                '*': ['class'],
+                'a': ['href', 'rel'],
+                'img': ['src', 'alt'],  # 支持<img src …>标签和属性
+            }
+        ))
+
+
+db.event.listen(Post.body, 'set', Post.on_changed_post)
 
 
 class Category(db.Model):
@@ -212,6 +230,7 @@ class Comment(db.Model):
         target.body.html = bleach.linkify(bleach.clean(
             markdown(value, output_format='html'),
             tags=allowed_tags, strip=True))
+
 
 db.event.listen(Comment.body, 'set', Comment.on_change_body)
 

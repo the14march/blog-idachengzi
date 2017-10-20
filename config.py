@@ -19,7 +19,8 @@ class Config:
 
     IDACHENGZI_ADMIN = os.environ.get('IDACHENGZI_ADMIN') or '2976626104@qq.com'
 
-    IDACHENGZI_POSTS_PER_PAGE=10
+    IDACHENGZI_POSTS_PER_PAGE=6
+    IDACHENGZI_SAVEPIC = os.path.join(basedir, 'savedpic')
 
     @staticmethod
     def init_app(app):

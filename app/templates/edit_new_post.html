@@ -1,26 +1,49 @@
 {% extends "base.html" %}
-{% import "bootstrap/wtf.html" as wtf %}
-
-{% block title %}idachengzi{% endblock %}
-
-{% block page_content %}
-    <div class="col-md-6" style="background-color: #f7ecb5">
-    a<br>
-    a<br>
-    a<br>
-    a<br>
-    a<br>
-    a<br>
-    a<br>
-    a<br>
-    </div>
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static',filename='editormd/css/editormd.min.css') }}">
 {% endblock %}
-{% block page_sidebar %}
-    <div class="col-md-6" style="background-color: aquamarine">
-        <div>
-            {% if current_user.can(Permission.WRITE_ARTICLES) %}
-                {{ wtf.quick_form(form) }}
-            {% endif %}
-        </div>
-    </div>
+{% block page_content %}
+    {% if current_user.can(Permission.WRITE_ARTICLES) %}
+        <form class="form" method="post" role="form">
+            {{ form.hidden_tag() }}
+            <div class="col-md-6 form-group edit-post-title">
+                {{ form.title.label(class="control-lable") }}:
+                {{ form.title(class="form-control") }}
+            </div>
+            <div id="test-editormd" class="form-control">
+                {{ form.body }}
+            </div>
+            <div class="col-md-4 form-group edit-post-category">
+                {{ form.category.label(class="control-lable") }}:
+                {{ form.category(class="form-control") }}
+            </div>
+            <div class="col-md-8 form-group edit-post-summary">
+                {{ form.summary.label(class="control-lable") }}
+                {{ form.summary(class="form-control") }}
+            </div>
+            <div class="col-md-6 form-group">
+                {{ form.submit(class="btn btn-default") }}
+            </div>
+        </form>
+    {% endif %}
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static',filename='editormd/editormd.min.js') }}"></script>
+    <script>
+        var testEditor;
+        $(function () {
+            testEditor = editormd("test-editormd", {
+                width: '97.5%',
+                height: '640px',
+                {#                syncScrolling: "false",#}
+                path: "{{url_for('static',filename='editormd/lib/')}}",
+                {#                //启动本地图片上传功能#}
+                {#                imageUpload: true,#}
+                {#                imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],#}
+                {#                imageUploadURL: "{{url_for('main.upload')}}"#}
+            });
+        })
+    </script>
 {% endblock %}

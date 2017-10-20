@@ -2,31 +2,540 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d2e2dcd-7f6f-41f3-a516-2b537f4019d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/_macros.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/_post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/_sidebar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/edit_new_post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/edit_post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/posts_under_category.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/search.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/tem.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/tem_posts.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/CHANGE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Bold-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Bold-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-BoldItalic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-BoldItalic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Italic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Italic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Light-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Light-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-LightItalic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-LightItalic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Regular-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Regular-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/images/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/images/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/images/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/images/editormd-screenshot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/fonts/editormd-logo.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/fonts/editormd-logo.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/fonts/editormd-logo.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/loading@2x.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/loading@3x.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-favicon-16x16.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-favicon-24x24.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-favicon-32x32.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-favicon-48x48.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-favicon-64x64.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-114x114.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-120x120.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-144x144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-16x16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-180x180.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-240x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-24x24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-320x320.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-48x48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-57x57.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-64x64.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-72x72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/editormd-logo-96x96.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/images/logos/vi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/css/highlight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/BUGS.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/Gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/css/editormd.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/css/editormd.logo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/css/editormd.logo.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/css/editormd.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/css/editormd.preview.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/css/editormd.preview.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/editormd.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Bold-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-BoldItalic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Italic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Light-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-LightItalic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/fonts/OpenSans-Regular-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/scripts/linenumber.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/scripts/prettify/Apache-License-2.0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/scripts/prettify/lang-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/scripts/prettify/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/styles/jsdoc-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/styles/prettify-jsdoc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/docs/styles/prettify-tomorrow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/editormd.amd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/editormd.amd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/editormd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/editormd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/@links.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/auto-height.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/change-mode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/code-fold.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/custom-keyboard-shortcuts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/custom-toolbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/define-plugin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/delay-renderer-preview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/dynamic-create-editormd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/emoji.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/extends.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/external-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/flowchart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/form-get-value.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/full.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/goto-line.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/html-preview-markdown-to-html-custom-toc-container.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/html-preview-markdown-to-html.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/html-tags-decode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/image-cross-domain-upload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/image-upload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/js/require.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/js/sea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/js/seajs-main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/js/zepto.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/katex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/manually-load-modules.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/multi-editormd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/multi-languages.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/on-off.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/onchange.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/onfullscreen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/onload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/onpreviewing-onpreviewed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/onresize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/onscroll-onpreviewscroll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/onwatch-onunwatch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/page-break.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/php/cross-domain-upload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/php/editormd.uploader.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/php/post.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/php/upload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/php/upload_callback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/readonly.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/resettings.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/search-replace.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/sequence-diagram.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/set-get-replace-selection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/simple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/sync-scrolling.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/task-lists.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/test.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/themes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/toc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/toolbar-auto-fixed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/use-requirejs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/use-seajs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/examples/use-zepto.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/fonts/editormd-logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/languages/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/languages/zh-tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/AUTHORS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/comment/comment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/comment/continuecomment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/dialog/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/dialog/dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/display/fullscreen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/display/fullscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/display/panel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/display/placeholder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/display/rulers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/edit/closebrackets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/edit/closetag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/edit/continuelist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/edit/matchbrackets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/edit/matchtags.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/edit/trailingspace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/fold/brace-fold.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/fold/comment-fold.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/fold/foldcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/fold/foldgutter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/fold/foldgutter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/fold/indent-fold.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/fold/markdown-fold.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/fold/xml-fold.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/hint/anyword-hint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/hint/css-hint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/hint/html-hint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/hint/javascript-hint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/hint/show-hint.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/hint/show-hint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/hint/sql-hint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/hint/xml-hint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/lint/coffeescript-lint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/lint/css-lint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/lint/javascript-lint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/lint/json-lint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/lint/lint.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/lint/lint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/lint/yaml-lint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/merge/merge.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/merge/merge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/mode/loadmode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/mode/multiplex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/mode/multiplex_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/mode/overlay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/mode/simple.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/runmode/colorize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/runmode/runmode-standalone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/runmode/runmode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/runmode/runmode.node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/scroll/annotatescrollbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/scroll/scrollpastend.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/scroll/simplescrollbars.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/scroll/simplescrollbars.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/search/match-highlighter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/search/matchesonscrollbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/search/matchesonscrollbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/search/search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/search/searchcursor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/selection/active-line.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/selection/mark-selection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/selection/selection-pointer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/tern/tern.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/tern/tern.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/tern/worker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addon/wrap/hardwrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/addons.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/codemirror.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/codemirror.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/lib/codemirror.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/lib/codemirror.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/apl/apl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/apl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/asterisk/asterisk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/asterisk/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/clike/clike.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/clike/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/clike/scala.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/clojure/clojure.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/clojure/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/cobol/cobol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/cobol/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/coffeescript/coffeescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/coffeescript/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/commonlisp/commonlisp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/commonlisp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/css/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/css/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/css/less.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/css/less_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/css/scss.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/css/scss_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/css/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/cypher/cypher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/cypher/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/d/d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/d/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/dart/dart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/dart/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/diff/diff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/diff/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/django/django.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/django/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/dockerfile/dockerfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/dockerfile/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/dtd/dtd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/dtd/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/dylan/dylan.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/dylan/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/ebnf/ebnf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/ebnf/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/ecl/ecl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/ecl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/eiffel/eiffel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/eiffel/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/erlang/erlang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/erlang/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/forth/forth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/forth/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/fortran/fortran.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/fortran/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/gas/gas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/gas/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/gfm/gfm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/gfm/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/gfm/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/gherkin/gherkin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/gherkin/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/go/go.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/go/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/groovy/groovy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/groovy/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/haml/haml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/haml/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/haml/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/haskell/haskell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/haskell/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/haxe/haxe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/haxe/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/htmlembedded/htmlembedded.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/htmlembedded/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/htmlmixed/htmlmixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/htmlmixed/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/http/http.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/http/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/idl/idl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/idl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/jade/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/jade/jade.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/javascript/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/javascript/javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/javascript/json-ld.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/javascript/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/javascript/typescript.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/jinja2/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/jinja2/jinja2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/julia/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/julia/julia.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/kotlin/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/kotlin/kotlin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/livescript/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/livescript/livescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/lua/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/lua/lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/markdown/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/markdown/markdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/markdown/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/meta.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/mirc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/mirc/mirc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/mllike/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/mllike/mllike.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/modelica/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/modelica/modelica.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/nginx/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/nginx/nginx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/ntriples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/ntriples/ntriples.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/octave/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/octave/octave.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/pascal/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/pascal/pascal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/pegjs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/pegjs/pegjs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/perl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/perl/perl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/php/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/php/php.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/php/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/pig/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/pig/pig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/properties/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/properties/properties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/puppet/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/puppet/puppet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/python/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/python/python.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/q/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/q/q.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/r/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/r/r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/rpm/changes/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/rpm/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/rpm/rpm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/rst/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/rst/rst.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/ruby/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/ruby/ruby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/ruby/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/rust/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/rust/rust.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/sass/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/sass/sass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/scheme/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/scheme/scheme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/shell/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/shell/shell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/shell/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/sieve/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/sieve/sieve.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/slim/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/slim/slim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/slim/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/smalltalk/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/smalltalk/smalltalk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/smarty/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/smarty/smarty.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/smartymixed/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/smartymixed/smartymixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/solr/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/solr/solr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/soy/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/soy/soy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/sparql/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/sparql/sparql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/spreadsheet/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/spreadsheet/spreadsheet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/sql/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/sql/sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/stex/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/stex/stex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/stex/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/stylus/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/stylus/stylus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/tcl/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/tcl/tcl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/textile/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/textile/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/textile/textile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/tiddlywiki/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/tiddlywiki/tiddlywiki.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/tiddlywiki/tiddlywiki.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/tiki/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/tiki/tiki.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/tiki/tiki.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/toml/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/toml/toml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/tornado/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/tornado/tornado.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/turtle/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/turtle/turtle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/vb/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/vb/vb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/vbscript/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/vbscript/vbscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/velocity/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/velocity/velocity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/verilog/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/verilog/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/verilog/verilog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/xml/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/xml/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/xml/xml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/xquery/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/xquery/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/xquery/xquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/yaml/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/yaml/yaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/z80/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/mode/z80/z80.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/modes.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/3024-day.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/3024-night.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/ambiance-mobile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/ambiance.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/base16-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/base16-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/blackboard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/cobalt.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/colorforth.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/eclipse.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/elegant.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/erlang-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/lesser-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/mbo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/mdn-like.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/midnight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/monokai.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/neat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/neo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/night.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/paraiso-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/paraiso-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/pastel-on-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/rubyblue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/solarized.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/the-matrix.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/tomorrow-night-bright.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/tomorrow-night-eighties.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/twilight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/vibrant-ink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/xq-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/xq-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/codemirror/theme/zenburn.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/flowchart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/jquery.flowchart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/marked.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/prettify.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/raphael.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/sequence-diagram.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/lib/underscore.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/code-block-dialog/code-block-dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/emoji-dialog/emoji-dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/emoji-dialog/emoji.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/goto-line-dialog/goto-line-dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/help-dialog/help-dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/help-dialog/help.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/html-entities-dialog/html-entities-dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/html-entities-dialog/html-entities.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/image-dialog/image-dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/link-dialog/link-dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/plugin-template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/preformatted-text-dialog/preformatted-text-dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/reference-link-dialog/reference-link-dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/table-dialog/table-dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/plugins/test-plugin/test-plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/editormd.codemirror.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/editormd.dialog.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/editormd.form.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/editormd.grid.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/editormd.logo.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/editormd.menu.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/editormd.preview.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/editormd.preview.themes.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/editormd.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/editormd.tab.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/editormd.themes.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/github-markdown.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/lib/prefixes.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/lib/variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/scss/prettify.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/src/editormd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/bootstrap-test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/codemirror-searchbox-test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/codemirror-test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/js/searchbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/katex-tests.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/marked-@at-test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/marked-emoji-test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/marked-heading-link-test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/marked-todo-list-test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/qunit/qunit-1.16.0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/editormd/tests/qunit/qunit-1.16.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/js/hightlight.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/__init__.py" afterPath="$PROJECT_DIR$/app/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main/forms.py" afterPath="$PROJECT_DIR$/app/main/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main/views.py" afterPath="$PROJECT_DIR$/app/main/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models.py" afterPath="$PROJECT_DIR$/app/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/blog.css" afterPath="$PROJECT_DIR$/app/static/blog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/css/styles.css" afterPath="$PROJECT_DIR$/app/static/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/_post.html" afterPath="$PROJECT_DIR$/app/templates/_post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/_sidebar.html" afterPath="$PROJECT_DIR$/app/templates/_sidebar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/about_me.html" afterPath="$PROJECT_DIR$/app/templates/about_me.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/auth/change_email.html" afterPath="$PROJECT_DIR$/app/templates/auth/change_email.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/auth/change_password.html" afterPath="$PROJECT_DIR$/app/templates/auth/change_password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/auth/login.html" afterPath="$PROJECT_DIR$/app/templates/auth/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/auth/register.html" afterPath="$PROJECT_DIR$/app/templates/auth/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/auth/reset_password.html" afterPath="$PROJECT_DIR$/app/templates/auth/reset_password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/auth/unconfirmed.html" afterPath="$PROJECT_DIR$/app/templates/auth/unconfirmed.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/base.html" afterPath="$PROJECT_DIR$/app/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/index.html" afterPath="$PROJECT_DIR$/app/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/edit_new_post.html" afterPath="$PROJECT_DIR$/app/templates/edit_new_post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/edit_post.html" afterPath="$PROJECT_DIR$/app/templates/edit_post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/post.html" afterPath="$PROJECT_DIR$/app/templates/post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/user.html" afterPath="$PROJECT_DIR$/app/templates/user.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
     </list>
@@ -39,6 +548,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/idachengzi$hello.coverage" NAME="hello Coverage Results" MODIFIED="1507990398800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/idachengzi$123.coverage" NAME="123 Coverage Results" MODIFIED="1508520329250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/idachengzi$mail_test.coverage" NAME="mail_test Coverage Results" MODIFIED="1508171416381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -47,83 +557,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/main/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/main/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="88" column="15" lean-forward="true" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
-              <folding>
-                <element signature="e#24#112#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_new_post.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/edit_new_post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -132,18 +570,124 @@
       <file leaf-file-name="edit_post.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/edit_post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="427">
+              <caret line="45" column="15" lean-forward="true" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/edit_profile.html">
+      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="125">
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="71" column="19" lean-forward="false" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+              <folding>
+                <element signature="e#24#38#0" expanded="true" />
+                <element signature="e#427#574#0" expanded="false" />
+                <element signature="e#455#459#0" expanded="false" />
+                <element signature="e#632#667#0" expanded="false" />
+                <element signature="e#1040#1739#0" expanded="false" />
+                <element signature="e#1048#1451#0" expanded="false" />
+                <element signature="e#1071#1185#0" expanded="false" />
+                <element signature="e#1214#1396#0" expanded="false" />
+                <element signature="e#1488#1711#0" expanded="false" />
+                <element signature="e#1773#1803#0" expanded="false" />
+                <element signature="e#2608#3070#0" expanded="false" />
+                <element signature="e#2687#2923#0" expanded="false" />
+                <element signature="e#3147#3520#0" expanded="false" />
+                <element signature="e#3550#3613#0" expanded="false" />
+                <element signature="e#3655#3740#0" expanded="false" />
+                <element signature="e#3782#3820#0" expanded="false" />
+                <element signature="e#3890#3995#0" expanded="false" />
+                <element signature="e#4035#4318#0" expanded="false" />
+                <element signature="e#4381#4484#0" expanded="false" />
+                <element signature="e#4545#4833#0" expanded="false" />
+                <element signature="e#4914#5048#0" expanded="false" />
+                <element signature="e#5093#5653#0" expanded="false" />
+                <element signature="e#5701#5761#0" expanded="false" />
+                <element signature="e#5826#5879#0" expanded="false" />
+                <element signature="e#5930#5986#0" expanded="false" />
+                <element signature="e#6020#6054#0" expanded="false" />
+                <element signature="e#8309#8411#0" expanded="false" />
+                <element signature="e#8345#8357#0" expanded="false" />
+                <element signature="e#8399#8411#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_post.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/_post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/main/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1063">
+              <caret line="94" column="20" lean-forward="true" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+              <folding>
+                <element signature="e#24#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about_me.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/about_me.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+              <folding>
+                <element signature="e#203#226#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+              <folding>
+                <element signature="e#24#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="22" column="57" lean-forward="false" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -154,9 +698,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -169,10 +714,26 @@
       <find>row</find>
       <find>get</find>
       <find>get_or</find>
+      <find>filters</find>
       <find>get_or_</find>
+      <find>s</find>
+      <find>sy</find>
+      <find>sync</find>
+      <find>syncS</find>
+      <find>syncScoll</find>
+      <find>syncScol</find>
+      <find>syncSco</find>
+      <find>syncSc</find>
+      <find>syncScrll</find>
+      <find>syncScrl</find>
+      <find>syncScr</find>
+      <find>syncScro</find>
+      <find>syncScrol</find>
+      <find>syncScrolling</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/venv/lib/python3.5/site-packages/flask_bootstrap/static/css</dir>
+      <dir>$PROJECT_DIR$/app/static/editormd</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -181,13 +742,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/hello.py" />
-        <option value="$PROJECT_DIR$/app/errors.py" />
-        <option value="$PROJECT_DIR$/tests/__init__.py" />
-        <option value="$PROJECT_DIR$/app/main/errors.py" />
-        <option value="$USER_HOME$/Documents/flasky/flasky/venv/lib/python2.7/site-packages/sqlalchemy/dialects/mysql/mysqldb.py" />
-        <option value="$PROJECT_DIR$/app/email.py" />
         <option value="$PROJECT_DIR$/mail_test.py" />
         <option value="$PROJECT_DIR$/app/auth/__init__.py" />
         <option value="$PROJECT_DIR$/app/templates/auth/email/confirm.html" />
@@ -201,37 +755,44 @@
         <option value="$PROJECT_DIR$/app/main/__init__.py" />
         <option value="$PROJECT_DIR$/app/templates/edit_profile.html" />
         <option value="$PROJECT_DIR$/app/auth/views.py" />
-        <option value="$PROJECT_DIR$/app/templates/user.html" />
         <option value="$PROJECT_DIR$/app/static/styles.css" />
         <option value="$PROJECT_DIR$/venv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html" />
         <option value="$PROJECT_DIR$/app/templates/tem.html" />
-        <option value="$PROJECT_DIR$/app/static/css/styles.css" />
         <option value="$PROJECT_DIR$/app/templates/tem_index.html" />
         <option value="$PROJECT_DIR$/app/templates/tem_posts.html" />
-        <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/app/templates/temp_posts.html" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
-        <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/app/templates/temp_post.html" />
-        <option value="$PROJECT_DIR$/app/static/blog.css" />
         <option value="$PROJECT_DIR$/app/templates/auth/login.html" />
         <option value="$PROJECT_DIR$/app/templates/auth/reset_password.html" />
         <option value="$PROJECT_DIR$/app/templates/auth/unconfirmed.html" />
         <option value="$PROJECT_DIR$/app/templates/auth/register.html" />
         <option value="$PROJECT_DIR$/app/templates/auth/change_password.html" />
         <option value="$PROJECT_DIR$/app/templates/auth/change_email.html" />
-        <option value="$PROJECT_DIR$/app/templates/edit_new_post.html" />
-        <option value="$PROJECT_DIR$/app/main/forms.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/app/templates/_macros.html" />
         <option value="$PROJECT_DIR$/app/templates/index.html" />
-        <option value="$PROJECT_DIR$/app/templates/_post.html" />
-        <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/app/templates/search.html" />
-        <option value="$PROJECT_DIR$/app/templates/about_me.html" />
         <option value="$PROJECT_DIR$/app/templates/_sidebar.html" />
-        <option value="$PROJECT_DIR$/app/templates/post.html" />
+        <option value="$PROJECT_DIR$/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/app/main/forms.py" />
+        <option value="$PROJECT_DIR$/app/templates/test_1.html" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/app/static/js/hljs.js" />
+        <option value="$PROJECT_DIR$/app/static/js/hightlight.js" />
+        <option value="$PROJECT_DIR$/app/static/css/highlight.css" />
+        <option value="$PROJECT_DIR$/app/static/editormd/editormd.js" />
+        <option value="$PROJECT_DIR$/app/static/css/styles.css" />
+        <option value="$PROJECT_DIR$/app/templates/edit_new_post.html" />
+        <option value="$PROJECT_DIR$/app/static/blog.css" />
+        <option value="$PROJECT_DIR$/app/templates/edit_post.html" />
+        <option value="$PROJECT_DIR$/123.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/app/templates/user.html" />
         <option value="$PROJECT_DIR$/app/main/views.py" />
+        <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/app/templates/about_me.html" />
+        <option value="$PROJECT_DIR$/app/templates/_post.html" />
+        <option value="$PROJECT_DIR$/app/templates/post.html" />
       </list>
     </option>
   </component>
@@ -331,6 +892,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idachengzi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idachengzi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -346,15 +925,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/savepic" />
       <recent name="$PROJECT_DIR$/app/static/css" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/main" />
       <recent name="$PROJECT_DIR$/app" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/static" />
       <recent name="$PROJECT_DIR$/app/templates" />
       <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/static" />
       <recent name="$PROJECT_DIR$/app/templates/auth" />
       <recent name="$PROJECT_DIR$/app/templates/auth/email" />
     </key>
@@ -371,7 +951,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mail_test">
+  <component name="RunManager" selected="Python.123">
     <configuration default="false" name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -405,6 +985,25 @@
       <module name="idachengzi" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mail_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="123" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="idachengzi" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/123.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -558,14 +1157,16 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.hello" />
       <item index="1" class="java.lang.String" itemvalue="Python.mail_test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.123" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.mail_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.hello" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.123" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mail_test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.hello" />
       </list>
     </recent_temporary>
   </component>
@@ -587,14 +1188,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60835916" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.60835916" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21354581" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -621,61 +1221,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/migrations/versions/f70060a2a0b7_initial_migrations.py" />
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/flask_mail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="557" column="8" lean-forward="false" selection-start-line="557" selection-start-column="8" selection-end-line="557" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mail_test.py" />
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/flask_migrate/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3584">
-          <caret line="95" column="24" lean-forward="false" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="e#24#52#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/mail/new_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/mail/new_user.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/auth/email/change_email.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/auth/email/change_email.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -746,14 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/tem.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -770,29 +1307,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/tem_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="82" column="36" lean-forward="false" selection-start-line="82" selection-start-column="36" selection-end-line="83" selection-end-column="113" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="e#24#33#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,14 +1363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="112" column="5" lean-forward="false" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/auth/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -899,129 +1410,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="195" column="71" lean-forward="true" selection-start-line="195" selection-start-column="71" selection-end-line="195" selection-end-column="71" />
-          <folding>
-            <element signature="e#427#574#0" expanded="false" />
-            <element signature="e#455#459#0" expanded="false" />
-            <element signature="e#632#667#0" expanded="false" />
-            <element signature="e#696#1803#0" expanded="false" />
-            <element signature="e#1040#1739#0" expanded="false" />
-            <element signature="e#1048#1451#0" expanded="false" />
-            <element signature="e#1071#1185#0" expanded="false" />
-            <element signature="e#1214#1396#0" expanded="false" />
-            <element signature="e#1488#1711#0" expanded="false" />
-            <element signature="e#1773#1803#0" expanded="false" />
-            <element signature="e#1843#6088#0" expanded="false" />
-            <element signature="e#2642#3104#0" expanded="false" />
-            <element signature="e#2721#2957#0" expanded="false" />
-            <element signature="e#3181#3554#0" expanded="false" />
-            <element signature="e#3584#3647#0" expanded="false" />
-            <element signature="e#3689#3774#0" expanded="false" />
-            <element signature="e#3816#3854#0" expanded="false" />
-            <element signature="e#3924#4029#0" expanded="false" />
-            <element signature="e#4069#4352#0" expanded="false" />
-            <element signature="e#4415#4518#0" expanded="false" />
-            <element signature="e#4579#4867#0" expanded="false" />
-            <element signature="e#4948#5082#0" expanded="false" />
-            <element signature="e#5127#5687#0" expanded="false" />
-            <element signature="e#5735#5795#0" expanded="false" />
-            <element signature="e#5860#5913#0" expanded="false" />
-            <element signature="e#5964#6020#0" expanded="false" />
-            <element signature="e#6054#6088#0" expanded="false" />
-            <element signature="e#7648#7750#0" expanded="false" />
-            <element signature="e#7684#7696#0" expanded="false" />
-            <element signature="e#7738#7750#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/_macros.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/_post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/_sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/about_me.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/edit_new_post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/edit_post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/edit_profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1042,29 +1434,265 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/user.html">
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        <state relative-caret-position="310">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/_sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/flask/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="193" column="4" lean-forward="false" selection-start-line="193" selection-start-column="4" selection-end-line="193" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/editormd/css/editormd.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/main/forms.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/jinja2/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="318" column="30" lean-forward="false" selection-start-line="318" selection-start-column="30" selection-end-line="318" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/jinja2/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="1021" column="11" lean-forward="true" selection-start-line="1021" selection-start-column="11" selection-end-line="1021" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/hightlight.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="1387" column="16" lean-forward="true" selection-start-line="1387" selection-start-column="16" selection-end-line="1387" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/highlight.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/test_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/editormd/editormd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="113" column="40" lean-forward="true" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
+          <folding>
+            <marker date="1508516325205" expanded="true" signature="7818:7851" ph="..." />
+            <marker date="1508516325205" expanded="true" signature="8002:8034" ph="..." />
+            <marker date="1508516325205" expanded="true" signature="17570:17584" ph="..." />
+            <marker date="1508516325205" expanded="true" signature="48270:48274" ph="..." />
+            <marker date="1508516325205" expanded="true" signature="48593:48615" ph="..." />
+            <marker date="1508516325205" expanded="true" signature="48776:48794" ph="..." />
+            <marker date="1508516325205" expanded="true" signature="48807:48813" ph="©" />
+            <marker date="1508516325205" expanded="true" signature="121266:121290" ph="..." />
+            <marker date="1508516325205" expanded="true" signature="124141:124158" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="80" column="22" lean-forward="false" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/edit_new_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/edit_profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/edit_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="45" column="15" lean-forward="true" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/123.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="22" column="57" lean-forward="false" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="88" column="15" lean-forward="true" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
+        <state relative-caret-position="-1063">
+          <caret line="94" column="20" lean-forward="true" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
           <folding>
-            <element signature="e#24#112#0" expanded="true" />
+            <element signature="e#24#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="71" column="19" lean-forward="false" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+            <element signature="e#427#574#0" expanded="false" />
+            <element signature="e#455#459#0" expanded="false" />
+            <element signature="e#632#667#0" expanded="false" />
+            <element signature="e#1040#1739#0" expanded="false" />
+            <element signature="e#1048#1451#0" expanded="false" />
+            <element signature="e#1071#1185#0" expanded="false" />
+            <element signature="e#1214#1396#0" expanded="false" />
+            <element signature="e#1488#1711#0" expanded="false" />
+            <element signature="e#1773#1803#0" expanded="false" />
+            <element signature="e#2608#3070#0" expanded="false" />
+            <element signature="e#2687#2923#0" expanded="false" />
+            <element signature="e#3147#3520#0" expanded="false" />
+            <element signature="e#3550#3613#0" expanded="false" />
+            <element signature="e#3655#3740#0" expanded="false" />
+            <element signature="e#3782#3820#0" expanded="false" />
+            <element signature="e#3890#3995#0" expanded="false" />
+            <element signature="e#4035#4318#0" expanded="false" />
+            <element signature="e#4381#4484#0" expanded="false" />
+            <element signature="e#4545#4833#0" expanded="false" />
+            <element signature="e#4914#5048#0" expanded="false" />
+            <element signature="e#5093#5653#0" expanded="false" />
+            <element signature="e#5701#5761#0" expanded="false" />
+            <element signature="e#5826#5879#0" expanded="false" />
+            <element signature="e#5930#5986#0" expanded="false" />
+            <element signature="e#6020#6054#0" expanded="false" />
+            <element signature="e#8309#8411#0" expanded="false" />
+            <element signature="e#8345#8357#0" expanded="false" />
+            <element signature="e#8399#8411#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/about_me.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#203#226#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
