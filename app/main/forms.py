@@ -19,7 +19,6 @@ class PostForm(FlaskForm):
                                  Category.query.order_by('id').all()]
 
 
-
 class EditProfileForm(FlaskForm):
     name = StringField('Real name', validators=[Length(0, 64)])
     location = StringField('Location', validators=[Length(0, 64)])

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import hashlib
-from datetime import datetime
 
 import bleach
+from datetime import datetime
 from flask import current_app, request
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from markdown import markdown
