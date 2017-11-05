@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Idachengzi - Edit Categories{% endblock %}
+
+{% block page_content %}
+    <div class="page_header col-md-6">
+        <h1>Insert new category</h1>
+        {{ wtf.quick_form(form) }}
+    </div>
+{% endblock %}
+{% block page_sidebar %}
+    <div class="col-md-6">
+    {% include "_sidebar.html" %}
+    </div>
+{% endblock %}

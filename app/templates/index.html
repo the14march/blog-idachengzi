@@ -5,7 +5,7 @@
 {% block title %}idachengzi{% endblock %}
 
 {% block page_content %}
-    <div class="col-md-8">
+    <div class="col-md-9">
         {% include "_post.html" %}
         <div class="pagination">
             {{ macros.pagination_widget(pagination, 'main.index') }}
@@ -13,7 +13,7 @@
     </div>
 {% endblock %}
 {% block page_sidebar %}
-    <div class="col-md-4 sidebar-bg">
+    <div class="col-md-3 sidebar-bg">
         {% include "_sidebar.html" %}
     </div>
 {% endblock %}

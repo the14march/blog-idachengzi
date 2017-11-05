@@ -8,7 +8,7 @@ from markdown import markdown
 
 from app.decorators import admin_required
 from app.main import main
-from app.main.forms import EditProfileForm, EditProfileAdminForm, PostForm
+from app.main.forms import EditProfileForm, EditProfileAdminForm, PostForm, EditCategoriesForm
 from app import db
 from app.models import User, Role, Permission, Post, Category
 
@@ -52,10 +52,25 @@ def index():
     return render_template('index.html', posts=posts, pagination=pagination, categories=categories)
 
 
+@main.route('/category/edit', methods=['GET', 'POST'])
+@login_required
+def edit_categories():
+    form = EditCategoriesForm()
+    if form.validate_on_submit():
+        category = Category(name=form.category_name.data)
+        db.session.add(category)
+        db.session.commit()
+        flash('Category has been inserted.')
+        categories_after = Category.query.all()
+        redirect(url_for('main.edit_categories', form=form, categories=categories_after))
+    categories_after = Category.query.all()
+    return render_template('edit_categories.html', form=form, categories=categories_after)
+
 @main.route('/post/<int:id>', methods=['GET', 'POST'])
 def post_detail(id):
+    categories = Category.query.all()
     post = Post.query.get_or_404(id)
-    return render_template('post.html', post=post, markdown=markdown)
+    return render_template('post.html', post=post, categories=categories)
 
 
 @main.route('/category/<string:category_id>')

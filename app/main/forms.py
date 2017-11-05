@@ -6,6 +6,11 @@ from wtforms.validators import DataRequired, Length, Email, Regexp, ValidationEr
 from app.models import Role, User, Category
 
 
+class EditCategoriesForm(FlaskForm):
+    category_name = StringField('Insert category', validators=[DataRequired(), Length(1, 64)])
+    submit = SubmitField('Submit')
+
+
 class PostForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired(), Length(1, 64)])
     category = SelectField('Category', coerce=int)

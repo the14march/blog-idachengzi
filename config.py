@@ -15,7 +15,7 @@ class Config:
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
 
     IDACHENGZI_MAIL_SUBJECT_PREFIX = '[Idachengzi]'
-    IDACHENGZI_MAIL_SENDER = 'Idachengzi Admin'
+    IDACHENGZI_MAIL_SENDER = 'Idachengzi Admin <2976626104@qq.com>'
 
     IDACHENGZI_ADMIN = os.environ.get('IDACHENGZI_ADMIN')
 
